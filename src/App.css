@@ -1,0 +1,311 @@
+.parentnav {
+  background-color: rgb(22, 105, 245);
+  width: 100%;
+  height: 100px;
+}
+/* .brand .link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+} */
+.navheader {
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  cursor: pointer;
+}
+.navheader ul {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  line-height: 75px;
+  box-sizing: border-box;
+}
+.navheader ul li {
+  float: left;
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: capitalize;
+  border-bottom: 5px solid transparent;
+}
+.menuicon {
+  display: none;
+}
+
+.navheader li:hover {
+  border-bottom: 5px solid white;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.AutoComplete {
+  display: flex;
+  justify-content: center;
+}
+.AutoComplete input {
+  margin-top: -50px;
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+  font-size: 20px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 2.5rem;
+}
+.suggestions {
+  cursor: pointer;
+  border: 1px solid black;
+  text-align: center;
+  list-style: none;
+  margin-top: 0;
+  font-size: 20px;
+  max-height: 190px;
+  overflow-y: auto;
+  padding-left: 0;
+  position: absolute;
+  background: #fff;
+}
+.suggestions li:hover {
+  background-color: rgb(22, 105, 245);
+  color: white;
+  cursor: pointer;
+}
+.NewsApi {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  justify-content: center;
+  gap: 50px;
+}
+.apiform {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.btn {
+  font-size: 15px;
+  width: 140px;
+  text-align: center;
+  align-items: center;
+  height: 40px;
+  background-color: rgb(22, 105, 245);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.hearticon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.hearticon .fa-solid {
+  color: rgb(22, 105, 245);
+  text-decoration: none;
+}
+.loadingDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.card {
+  border: 1px solid black;
+  width: 320px;
+  margin: 20px 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.NewsApi .p1 img {
+  width: 100%;
+  height: 250px;
+  margin-top: -16px;
+  border: none;
+}
+.NewsApi .p2 {
+  font-weight: bolder;
+  padding-left: 20px;
+}
+
+.NewsApi .p3 {
+  font-style: italic;
+  padding-left: 20px;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.NewsApi .p4 {
+  color: #70757a;
+  padding-left: 20px;
+}
+.NewsApi .p5 {
+  color: #70757a;
+  padding-left: 20px;
+}
+.NewsApi .p6 {
+  font-size: smaller;
+  padding-left: 20px;
+}
+.NewsApi .p6 button {
+  margin-bottom: 10px;
+  height: 40px;
+  background-color: rgb(22, 105, 245);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 40%;
+  cursor: pointer;
+}
+
+.fa-icon {
+  float: right;
+  margin: 10px 20px 0px 0px;
+  cursor: pointer;
+}
+
+.textload .btn i {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.menubar > ul {
+  margin-top: -5px;
+  display: block;
+  opacity: 0.9;
+  text-transform: capitalize;
+  background-color: rgb(22, 105, 245);
+}
+
+.toggle {
+  height: 5vh;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1115px) {
+  .parentnav {
+    background-color: rgb(22, 105, 245);
+  }
+  .navheader ul li {
+    display: none;
+  }
+  .menuicon {
+    display: block;
+    font-size: 25px;
+  }
+
+  .AutoComplete input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: static;
+  }
+  .btn {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .menubar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1059px) {
+  .hearticon .fa-solid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 260px) {
+  .suggestions {
+    width: 315px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* .card {
+    width: 80vw !important;
+  } */
+  .result {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .card {
+    /* background-color: lightblue; */
+    width: 60vw;
+  }
+  .apiform {
+    display: flex;
+    flex-direction: column;
+  }
+  .AutoComplete input {
+    width: 220px;
+  }
+}
